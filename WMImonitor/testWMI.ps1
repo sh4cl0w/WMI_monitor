@@ -2,11 +2,6 @@
 .SYNOPSIS
     Script để test WMI: query, tạo process qua WMI, tạo permanent WMI subscription (Filter + Consumer + Binding), xóa test objects, và test EncodedCommand.
 
-.DESCRIPTION
-    -RunQuickTest       : Thực hiện vài WMI query và tạo process bằng WMI (notepad)
-    -CreateTestWmi      : Tạo permanent WMI subscription (khi process mới sinh, consumer sẽ chạy calc.exe)
-    -RemoveTestWmi      : Xóa các WMI objects tạo bởi script
-    -TestEncodedCommand : Tạo và chạy một EncodedCommand (mspaint + calc) để test
 
 USAGE
     # Run quick tests (queries + create notepad)
@@ -211,3 +206,4 @@ if (-not ($RunQuickTest -or $CreateTestWmi -or $RemoveTestWmi -or $TestEncodedCo
     Write-Host "  .\WMITest_Full.ps1 -RemoveTestWmi"
     Write-Host "  .\WMITest_Full.ps1 -TestEncodedCommand"
 }
+
