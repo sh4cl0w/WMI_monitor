@@ -45,10 +45,3 @@ Script PowerShell này dùng \*\*ETW (Event Tracing for Windows)\*\* để giám
 
 
 
-
-\### Kết thúc monitor
-
-```powershell
-
-.\\WMImonitor.ps1 -Start
-
