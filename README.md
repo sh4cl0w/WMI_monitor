@@ -19,7 +19,7 @@ Script PowerShell này dùng **ETW (Event Tracing for Windows)** để giám sá
 
 ### Bắt đầu monitor
 ```powershell
-.\WMImonitor.ps1 -Start
+.\WMImonitor.ps1 -Start```
 
 ## 🚀 Dừng để xem log
 
