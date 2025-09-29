@@ -21,7 +21,8 @@ Script PowerShell này dùng **ETW (Event Tracing for Windows)** để giám sá
 ```powershell
 .\WMImonitor.ps1 -Start
 
+## 🚀 Dừng để xem log
 
 ### Kết thúc monitor
 ```powershell
-.\WMImonitor.ps1 -Start
+.\WMImonitor.ps1 -Stop
