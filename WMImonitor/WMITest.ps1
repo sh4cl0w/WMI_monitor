@@ -1,7 +1,3 @@
-<#
-.SYNOPSIS
-    Sinh hoạt động WMI để test WMITrace.ps1
-#>
 
 Write-Host "[+] Thực hiện một số truy vấn và hành động WMI..."
 
@@ -22,3 +18,4 @@ Write-Host "[*] Query Win32_Service..."
 Get-WmiObject -Class Win32_Service | Select-Object -First 5 | Format-Table Name, State
 
 Write-Host "[+] Hoàn tất. Kiểm tra log bằng WMITrace.ps1 -Stop"
+
