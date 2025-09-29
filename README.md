@@ -1,4 +1,4 @@
-# WMI Monitor 
+# WMI Monitor
 
 Script PowerShell này dùng **ETW (Event Tracing for Windows)** để giám sát hoạt động **WMI** trên Windows thông qua provider `Microsoft-Windows-WMI-Activity`.
 
@@ -22,4 +22,5 @@ Script PowerShell này dùng **ETW (Event Tracing for Windows)** để giám sá
 .\WMImonitor.ps1 -Start
 
 ### Kết thúc monitor
+```powershell
 .\WMImonitor.ps1 -Start
