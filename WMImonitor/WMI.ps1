@@ -5,7 +5,7 @@ $Command = "Start-Process mspaint.exe; Start-Process calc.exe"
 $Bytes = [System.Text.Encoding]::Unicode.GetBytes($Command)
 $EncodedCommand = [Convert]::ToBase64String($Bytes)
 
-# Sửa lỗi: CommandLineTemplate đúng format
+
 $PowerShellCommand = "powershell.exe -ExecutionPolicy Bypass -EncodedCommand $EncodedCommand"
 
 Write-Host "Encoded Command: $EncodedCommand" -ForegroundColor Yellow
@@ -77,3 +77,4 @@ catch {
     Write-Host "Error creating subscription: $($_.Exception.Message)" -ForegroundColor Red
 
 }
+
